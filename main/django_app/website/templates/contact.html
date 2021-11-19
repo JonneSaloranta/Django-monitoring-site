@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{%block content %}
+
+<main role="main">
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+	  <div class="container">
+		{% if user.is_authenticated %} <h1 class="display-3">Welcome {{ user.username }}!</h1> {% else %} <h1 class="display-3">Welcome to the site!</h1>	{% endif %}
+		<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+	  </div>
+	</div>
+
+  </main>
+
+
+<div class="container">
+	<div class="row">
+		
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-body">
+				<h5 class="card-title">Github</h5>
+				<p class="card-text">Contact me via GitHub</p>
+				<a href="https://github.com/JonneSaloranta/Django-monitoring-site" class="btn btn-primary">Go to GitHub</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-body">
+				<h5 class="card-title">Send an email</h5>
+				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+				<a href="#" class="btn btn-primary">Send email</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+{% endblock %}

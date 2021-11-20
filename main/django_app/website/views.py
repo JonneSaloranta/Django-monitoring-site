@@ -1,4 +1,3 @@
-from abc import abstractmethod
 from django.shortcuts import render
 
 from .forms import ProductCreateForm, RawProductForm

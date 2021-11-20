@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from website.views import *
+from changelog_app.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -25,4 +26,5 @@ urlpatterns = [
     path("contact/", contact),
     path("product/", product_details),
     path("create/", product_create),
+    path("test/", post_create_form),
 ]

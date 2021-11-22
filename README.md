@@ -79,7 +79,6 @@ This section includes a list of major frameworks/libraries used in this project.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * Python 3.x
 
 ### Installation
@@ -91,7 +90,7 @@ This is an example of how to list things you need to use the software and how to
 2. Install required packages from Requirements.txt
 
    ```sh
-   pip install -r Requirements.txt
+   pip install -r requirements.txt
    ```
 
 
